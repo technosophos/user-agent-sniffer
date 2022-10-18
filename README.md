@@ -13,12 +13,12 @@ To build this, you will need:
 Build instructions:
 
 1. Clone this repo
-1. Run `spin build`
+1. Run `spin build --up` to build and test
 
 To deploy, configure your deployment target, and then run:
 
-```
-$spin deploy
+```console
+$ spin deploy
 ```
 
 The above should give you a URL.
