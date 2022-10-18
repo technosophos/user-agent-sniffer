@@ -1,0 +1,14 @@
+spin_version = "1"
+authors = ["Matt Butcher <matt.butcher@fermyon.com>"]
+description = "Sniff user agent strings"
+name = "agent-sniffer"
+trigger = { type = "http", base = "/" }
+version = "0.1.0"
+
+[[component]]
+id = "agent-sniffer"
+source = "main.wasm"
+[component.trigger]
+route = "/..."
+[component.build]
+command = "tinygo build -wasm-abi=generic -target=wasi -no-debug -o main.wasm main.go"
